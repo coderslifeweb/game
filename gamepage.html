@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="tr">
     <head>
@@ -22,9 +32,10 @@
             var deneme =0;
            
              var el12 = document.getElementById("qwe");
-            var money =100;
+            var money =150;
             var thirst =0;
             var hunger =0;
+          var  gold =0;
            
             
 function menu(){
@@ -99,11 +110,11 @@ document.getElementById("money").innerHTML ="Money:"+money +" Dollars"
 }
 function skip(){
     
-    money -= 20;
+    money -= 5;
     
-experiences -= 2;
-hunger -= 5;
-thirst -=5;
+experiences -=0.5;
+hunger -= 2;
+thirst -=2;
 document.getElementById("eqs").innerHTML ="Experience Level:"+experiences;
 if(thirst <5){
 bas ="You are thirsty."
@@ -124,7 +135,10 @@ document.getElementById("hunger").innerHTML =las;
 document.getElementById("money").innerHTML ="Money:"+money +" Dollars"
 deneme -=4;
     return deneme
-    
+    if(money >= 200){
+gold +=1;
+    }
+    document.getElementById("gold").innerHTML ="Gold:"+gold;
 }
 
 
@@ -145,6 +159,7 @@ function is(){
 money += 10;}
 if(experiences < 10){
     money += 5;
+
 }
 
 document.getElementById("money").innerHTML ="Money:"+money +" Dollars";
@@ -161,7 +176,8 @@ document.getElementById("money").innerHTML ="Money:"+money +" Dollars";
         <button onclick="skip()" class="menu" id="skip">Skip The Day</button>
         <center><button id="start" onclick="start()" class="start">Start</button></center>
         <h1 class="money" id="money"></h1>
-<body background="Coders Life BG.png"></body>
+        <br><h1 class="gold" id="gold"></h1>
+<body background="CoderslifeBG2.png"></body>
 <br>
 <h1 id="rt" class="stat">Statistics</h1>
 
@@ -232,3 +248,29 @@ document.getElementById("money").innerHTML ="Money:"+money +" Dollars";
 
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
