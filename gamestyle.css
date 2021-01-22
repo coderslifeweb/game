@@ -1,0 +1,56 @@
+.items{
+float: right;
+}
+.shop{
+    float: right;
+    font-size: 30px;
+    font-family: papyrus;
+    background-color: lightseagreen;
+    color: white;
+}
+.items{
+    border-radius: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: lightseagreen;
+    color: white;
+    font-size: 20px;
+}
+.items:hover{
+    background-color: rgb(33, 136, 131);
+}
+.start{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: lightseagreen;
+    color: white;
+    font-size: 30px; 
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+}
+.start:hover{
+    background-color: rgb(33, 136, 131);
+}
+.menu{
+border-radius: 10px;
+background-color: steelblue;
+color: white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+width: 100px;
+height: 50px;
+}
+.menu:hover{
+    background-color: rgb(34, 89, 134);
+}
+.is{
+    border-radius: 1000px;
+    background-color: tomato;
+    color: white;
+    width: 150px;
+    height: 75px;
+    border: tomato;
+    
+}
+.is:hover{
+    background-color: rgb(197, 60, 36);
+    border: violet;
+}

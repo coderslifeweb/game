@@ -1,0 +1,26 @@
+.paragraf{
+background-color: teal;
+color: white;
+font-size: 30px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.alert{
+color: red;
+font-family: monospace;
+}
+.baslik{
+background-color: teal;
+color: white;
+font-size: 50px;
+}
+.buton{
+background-color: lightcoral;
+color: white;
+font-family: papyrus;
+width: 150px;
+height: 75px;
+border-radius: 10px;
+}
+.buton:hover{
+    background-color: rgb(197, 84, 84);
+}

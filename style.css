@@ -1,0 +1,19 @@
+.baslik{
+font-size: 60px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+}
+.buton{
+    width: 500px;
+    height: 100px;
+    font-size: 50px;
+    font-family: papyrus;
+    border-radius: 10px;
+    background-color: lightcoral;
+    color: white;
+}
+.buton:hover{
+
+    background-color: rgb(207, 88, 88);
+}

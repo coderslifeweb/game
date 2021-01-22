@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="gamestyle.css">
+<title>Coders Life</title>
+
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+    <body>
+        <script>
+            var deneme =0;
+           
+             var el12 = document.getElementById("qwe");
+            var money =100;
+            var thirst =0;
+            var hunger =0;
+           
+            
+function menu(){
+    window.location ="index.html"
+}
+function start(){
+    var el = document.getElementById("start");
+
+el.parentNode.removeChild(el);
+    document.getElementById("money").innerHTML ="Money:"+money +" Dollars";
+}
+
+var experiences = 0;
+var equipments = 0;
+
+function pc(){
+    
+
+
+    
+    money -= 23;
+equipments += 2;
+document.getElementById("eq").innerHTML ="Equipments Levels:"+equipments;
+document.getElementById("money").innerHTML ="Money:"+money +" Dollars"
+if (money <= 0){document.getElementById("money").innerHTML ="You Are Out OFF MONEY" }
+if(money <= 0){el12.parentNode.removeChild(el12);}
+
+}
+function keyboard(){
+    money -= 8;
+equipments += 1;
+document.getElementById("eq").innerHTML ="Equipments Levels:"+equipments;
+document.getElementById("money").innerHTML ="Money:"+money +" Dollars"
+if (money <= 0){document.getElementById("money").innerHTML ="You Are Out OFF MONEY"}
+
+}
+function experience(){
+    money -= 19;
+experiences += 1;
+document.getElementById("eqs").innerHTML ="Experience Level:"+experiences;
+document.getElementById("money").innerHTML ="Money:"+money +" Dollars"
+if (money <= 0){document.getElementById("money").innerHTML ="You Are Out OFF MONEY"}
+
+}
+var las;
+function food(){
+    money -= 10;
+hunger += 2;
+if(hunger <5){
+las ="You are hungry."
+
+}
+if (hunger >= 5) {
+    las ="You are full"
+}
+document.getElementById("hunger").innerHTML =las;
+document.getElementById("money").innerHTML ="Money:"+money +" Dollars"
+}
+var bas;
+function water(){
+    thirst += 2;
+    money -= 4;
+if(thirst <5){
+bas ="You are thirsty."
+
+}
+if (thirst >= 5) {
+    bas ="You are not thirsty"
+}
+document.getElementById("thirst").innerHTML =bas;
+document.getElementById("money").innerHTML ="Money:"+money +" Dollars"
+}
+function skip(){
+    
+    money -= 20;
+    
+experiences -= 2;
+hunger -= 5;
+thirst -=5;
+document.getElementById("eqs").innerHTML ="Experience Level:"+experiences;
+if(thirst <5){
+bas ="You are thirsty."
+
+}
+if (thirst >= 5) {
+    bas ="You are not thirsty"
+}
+document.getElementById("thirst").innerHTML =bas;
+if(hunger <5){
+las ="You are hungry."
+
+}
+if (hunger >= 5) {
+    las ="You are full"
+}
+document.getElementById("hunger").innerHTML =las;
+document.getElementById("money").innerHTML ="Money:"+money +" Dollars"
+deneme -=4;
+    return deneme
+    
+}
+
+
+
+
+
+function is(){
+    deneme += 1;
+    if (deneme > 3){
+    var eql = document.getElementById("is");
+
+  eql.removeChild(eql);}
+    if (experiences >= 20) {
+        money += 15;
+        
+    }
+    if(experiences >=10 ){
+money += 10;}
+if(experiences < 10){
+    money += 5;
+}
+
+document.getElementById("money").innerHTML ="Money:"+money +" Dollars";
+}
+
+
+
+
+
+
+        </script>
+        <button onclick="menu()" class="menu">Go Back To Main Menu</button>
+        <button class="is" onclick="is()" id="is">Work For Money</button>
+        <button onclick="skip()" class="menu" id="skip">Skip The Day</button>
+        <center><button id="start" onclick="start()" class="start">Start</button></center>
+        <h1 class="money" id="money"></h1>
+<body background="Coders Life BG.png"></body>
+<br>
+<h1 id="rt" class="stat">Statistics</h1>
+
+<br>
+<h2 id="eq" class="se"></h2>
+<br>
+<h2 id="eqs" class="se"></h2>
+<br>
+<h2 id="hunger" class="se">You are hungry.</h2>
+<br>
+<h2 id="thirst" class="se">You are thirsty.</h2>
+
+<button class="items" id="qwe" onclick="pc()">Upgrade PC 23 Dollars</button>
+<br><br><br>
+<button class="items" id="qwe" onclick="keyboard()">Upgrade Keyboard +1 8 Dollars</button>
+<br><br><br>
+<button class="items" id="qwe" onclick="experience()">Take Lessons  19 Dollars</button>
+<br><br><br>
+<button class="items" id="qwe" onclick="food()">Eat Something 10 Dollars</button>
+<br><br><br>
+<button class="items" id="qwe" onclick="water()">Drink Water 4 Dollars</button>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
