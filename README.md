@@ -1,2 +1,3 @@
 # game
-GAME HAS COPYRIGTH
+GAME HAS COPYRIGHT
+all rights reserved
